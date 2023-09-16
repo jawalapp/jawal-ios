@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JawalSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Jawal.start { config in
+            config.sdk_key = "TEST"
+            config.user_id = "USER_UNIQUE_ID"
+            config.description = "USER_DESCRIPTION"
+        }completion: { success in
+            if (success) {
+                print("Jawal initialized correctly")
+            }
+        }
         return true
     }
 

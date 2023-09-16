@@ -1,0 +1,4 @@
+framework module JawalSwift {
+  header "JawalSwift-Swift.h"
+  requires objc
+}

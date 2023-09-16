@@ -1,5 +1,4 @@
 import XCTest
-import jawal-ios
 
 class Tests: XCTestCase {
     
