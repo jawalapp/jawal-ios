@@ -1,16 +1,16 @@
 PODS:
-  - jawal-ios (0.1.0)
+  - jawal-ios (0.0.1)
 
 DEPENDENCIES:
-  - jawal-ios (from `../`)
+  - jawal-ios (~> 0.0.1)
 
-EXTERNAL SOURCES:
-  jawal-ios:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - jawal-ios
 
 SPEC CHECKSUMS:
-  jawal-ios: 73ee26bcf69fe4220e94dfac1c7cca7ac69b613d
+  jawal-ios: 8bcaf5aada17c83b26f926256c6871f38477ed34
 
-PODFILE CHECKSUM: fda430d9ff698ec6b131a8828b49bf538145326e
+PODFILE CHECKSUM: 52033c06cb0129509a8a16a394cdbe9dd45ea7f5
 
 COCOAPODS: 1.12.1

@@ -1,10 +1,5 @@
 # jawal-ios
 
-[![CI Status](https://img.shields.io/travis/Yassine El Garras/jawal-ios.svg?style=flat)](https://travis-ci.org/Yassine El Garras/jawal-ios)
-[![Version](https://img.shields.io/cocoapods/v/jawal-ios.svg?style=flat)](https://cocoapods.org/pods/jawal-ios)
-[![License](https://img.shields.io/cocoapods/l/jawal-ios.svg?style=flat)](https://cocoapods.org/pods/jawal-ios)
-[![Platform](https://img.shields.io/cocoapods/p/jawal-ios.svg?style=flat)](https://cocoapods.org/pods/jawal-ios)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

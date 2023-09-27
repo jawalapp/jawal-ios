@@ -9,13 +9,18 @@ import Swift
 import SystemConfiguration
 import _Concurrency
 import _StringProcessing
+public struct InitResultEvent {
+  public let isSuccessful: Swift.Bool
+  public let error: Swift.String
+  public let user: JawalSwift.User?
+}
 @objc @_hasMissingDesignatedInitializers public class Jawal : ObjectiveC.NSObject {
   public static var instance: JawalSwift.Jawal?
   final public let config: JawalSwift.JawalConfig
   public var managedObjectContext: CoreData.NSManagedObjectContext {
     get
   }
-  public static func start(configure: (inout JawalSwift.JawalConfig) -> Swift.Void, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  public static func start(configure: (inout JawalSwift.JawalConfig) -> Swift.Void, completion: ((JawalSwift.InitResultEvent) -> Swift.Void)? = nil)
   public func startTracking()
   public func startTracking(external_id: Swift.String)
   public func stopTracking()
@@ -33,6 +38,11 @@ extension JawalSwift.Jawal : CoreLocation.CLLocationManagerDelegate {
   public var description: Swift.String?
   public var enable_background_tracking: Swift.Bool
   @objc deinit
+}
+public struct User : Swift.Decodable {
+  public let id: Swift.Int
+  public let sdk_identification_key: Swift.String
+  public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc(LocationEventObject) public class LocationEventObject : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)

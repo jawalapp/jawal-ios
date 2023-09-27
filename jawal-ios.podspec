@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'jawal-ios'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Realtime location tracking made easy'
   s.homepage         = 'https://github.com/jawalapp/jawal-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

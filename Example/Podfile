@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'jawal-ios_Example' do
-  pod 'jawal-ios', :path => '../'
+  pod 'jawal-ios', '~> 0.0.2'
 end
 
 post_install do |installer|

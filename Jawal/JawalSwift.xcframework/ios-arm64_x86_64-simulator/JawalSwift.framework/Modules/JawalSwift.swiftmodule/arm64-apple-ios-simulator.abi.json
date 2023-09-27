@@ -82,6 +82,178 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "JawalSwift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitResultEvent",
+        "printedName": "InitResultEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isSuccessful",
+            "printedName": "isSuccessful",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10JawalSwift15InitResultEventV12isSuccessfulSbvp",
+            "mangledName": "$s10JawalSwift15InitResultEventV12isSuccessfulSbvp",
+            "moduleName": "JawalSwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift15InitResultEventV12isSuccessfulSbvg",
+                "mangledName": "$s10JawalSwift15InitResultEventV12isSuccessfulSbvg",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10JawalSwift15InitResultEventV5errorSSvp",
+            "mangledName": "$s10JawalSwift15InitResultEventV5errorSSvp",
+            "moduleName": "JawalSwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift15InitResultEventV5errorSSvg",
+                "mangledName": "$s10JawalSwift15InitResultEventV5errorSSvg",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user",
+            "printedName": "user",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "JawalSwift.User?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "User",
+                    "printedName": "JawalSwift.User",
+                    "usr": "s:10JawalSwift4UserV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10JawalSwift15InitResultEventV4userAA4UserVSgvp",
+            "mangledName": "$s10JawalSwift15InitResultEventV4userAA4UserVSgvp",
+            "moduleName": "JawalSwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "JawalSwift.User?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "User",
+                        "printedName": "JawalSwift.User",
+                        "usr": "s:10JawalSwift4UserV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift15InitResultEventV4userAA4UserVSgvg",
+                "mangledName": "$s10JawalSwift15InitResultEventV4userAA4UserVSgvg",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10JawalSwift15InitResultEventV",
+        "mangledName": "$s10JawalSwift15InitResultEventV",
+        "moduleName": "JawalSwift",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "JawalSwift"
       },
       {
@@ -355,12 +527,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Bool) -> ())?",
+                "printedName": "((JawalSwift.InitResultEvent) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Bool) -> ()",
+                    "printedName": "(JawalSwift.InitResultEvent) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -369,9 +541,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
+                        "name": "InitResultEvent",
+                        "printedName": "JawalSwift.InitResultEvent",
+                        "usr": "s:10JawalSwift15InitResultEventV"
                       }
                     ]
                   }
@@ -381,8 +553,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10JawalSwift0A0C5start9configure10completionyyAA0A6ConfigCzXE_ySbcSgtFZ",
-            "mangledName": "$s10JawalSwift0A0C5start9configure10completionyyAA0A6ConfigCzXE_ySbcSgtFZ",
+            "usr": "s:10JawalSwift0A0C5start9configure10completionyyAA0A6ConfigCzXE_yAA15InitResultEventVcSgtFZ",
+            "mangledName": "$s10JawalSwift0A0C5start9configure10completionyyAA0A6ConfigCzXE_yAA15InitResultEventVcSgtFZ",
             "moduleName": "JawalSwift",
             "static": true,
             "declAttributes": [
@@ -1081,6 +1253,143 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "User",
+        "printedName": "User",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10JawalSwift4UserV2idSivp",
+            "mangledName": "$s10JawalSwift4UserV2idSivp",
+            "moduleName": "JawalSwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift4UserV2idSivg",
+                "mangledName": "$s10JawalSwift4UserV2idSivg",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdk_identification_key",
+            "printedName": "sdk_identification_key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10JawalSwift4UserV22sdk_identification_keySSvp",
+            "mangledName": "$s10JawalSwift4UserV22sdk_identification_keySSvp",
+            "moduleName": "JawalSwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift4UserV22sdk_identification_keySSvg",
+                "mangledName": "$s10JawalSwift4UserV22sdk_identification_keySSvg",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "User",
+                "printedName": "JawalSwift.User",
+                "usr": "s:10JawalSwift4UserV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10JawalSwift4UserV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10JawalSwift4UserV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "JawalSwift",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10JawalSwift4UserV",
+        "mangledName": "$s10JawalSwift4UserV",
+        "moduleName": "JawalSwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2620,7 +2929,7 @@
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 3173,
+      "offset": 3293,
       "length": 21,
       "value": "\"JawalSDKInitialized\""
     },
