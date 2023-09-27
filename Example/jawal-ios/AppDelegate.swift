@@ -22,9 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             config.sdk_key = "TEST"
             config.user_id = "USER_UNIQUE_ID"
             config.description = "USER_DESCRIPTION"
-        }completion: { success in
-            if (success) {
+        }completion: { result in
+            if (result.isSuccessful) {
                 print("Jawal initialized correctly")
+            }else{
+                //get the reason of failure
+                print(result.error)
             }
         }
         return true

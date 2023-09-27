@@ -1,0 +1,108 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name JawalSwift
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreData
+import CoreLocation
+import Foundation
+import Swift
+import SystemConfiguration
+import _Concurrency
+import _StringProcessing
+public struct InitResultEvent {
+  public let isSuccessful: Swift.Bool
+  public let error: Swift.String
+  public let user: JawalSwift.User?
+}
+@objc @_hasMissingDesignatedInitializers public class Jawal : ObjectiveC.NSObject {
+  public static var instance: JawalSwift.Jawal?
+  final public let config: JawalSwift.JawalConfig
+  public var managedObjectContext: CoreData.NSManagedObjectContext {
+    get
+  }
+  public static func start(configure: (inout JawalSwift.JawalConfig) -> Swift.Void, completion: ((JawalSwift.InitResultEvent) -> Swift.Void)? = nil)
+  public func startTracking()
+  public func startTracking(external_id: Swift.String)
+  public func stopTracking()
+  public func isTracking() -> Swift.Bool
+  @objc deinit
+}
+extension JawalSwift.Jawal : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+}
+@_hasMissingDesignatedInitializers public class JawalConfig {
+  public var sdk_key: Swift.String
+  public var user_id: Swift.String
+  public var description: Swift.String?
+  public var enable_background_tracking: Swift.Bool
+  @objc deinit
+}
+public struct User : Swift.Decodable {
+  public let id: Swift.Int
+  public let sdk_identification_key: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(LocationEventObject) public class LocationEventObject : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension JawalSwift.LocationEventObject {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<JawalSwift.LocationEventObject>
+  @objc @NSManaged dynamic public var accuracy: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var altitude: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bearing: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sessionUuid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var speed: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(SessionEventObject) public class SessionEventObject : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension JawalSwift.SessionEventObject {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<JawalSwift.SessionEventObject>
+  @objc @NSManaged dynamic public var externalId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var key: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
