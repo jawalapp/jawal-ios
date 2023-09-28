@@ -717,82 +717,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "locationManager",
-            "printedName": "locationManager(_:didFailWithError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationManager",
-                "printedName": "CoreLocation.CLLocationManager",
-                "usr": "c:objc(cs)CLLocationManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@JawalSwift@objc(cs)Jawal(im)locationManager:didFailWithError:",
-            "mangledName": "$s10JawalSwift0A0C15locationManager_16didFailWithErrorySo010CLLocationD0C_s0H0_ptF",
-            "moduleName": "JawalSwift",
-            "objc_name": "locationManager:didFailWithError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "locationManager",
-            "printedName": "locationManager(_:didChangeAuthorization:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationManager",
-                "printedName": "CoreLocation.CLLocationManager",
-                "usr": "c:objc(cs)CLLocationManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLAuthorizationStatus",
-                "printedName": "CoreLocation.CLAuthorizationStatus",
-                "usr": "c:@E@CLAuthorizationStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@JawalSwift@objc(cs)Jawal(im)locationManager:didChangeAuthorizationStatus:",
-            "mangledName": "$s10JawalSwift0A0C15locationManager_22didChangeAuthorizationySo010CLLocationD0C_So21CLAuthorizationStatusVtF",
-            "moduleName": "JawalSwift",
-            "objc_name": "locationManager:didChangeAuthorizationStatus:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2873,7 +2798,7 @@
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/RabbitMQManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 384,
+      "offset": 319,
       "length": 5,
       "value": "false"
     },
@@ -2929,7 +2854,7 @@
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 3293,
+      "offset": 3515,
       "length": 21,
       "value": "\"JawalSDKInitialized\""
     },

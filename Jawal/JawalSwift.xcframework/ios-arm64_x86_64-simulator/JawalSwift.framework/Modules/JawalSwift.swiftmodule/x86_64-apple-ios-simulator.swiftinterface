@@ -29,8 +29,6 @@ public struct InitResultEvent {
 }
 extension JawalSwift.Jawal : CoreLocation.CLLocationManagerDelegate {
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
 }
 @_hasMissingDesignatedInitializers public class JawalConfig {
   public var sdk_key: Swift.String

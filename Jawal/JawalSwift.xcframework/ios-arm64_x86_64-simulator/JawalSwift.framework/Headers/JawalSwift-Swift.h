@@ -266,8 +266,6 @@ SWIFT_CLASS("_TtC10JawalSwift5Jawal")
 
 @interface Jawal (SWIFT_EXTENSION(JawalSwift)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 @end
 
 @class NSEntityDescription;
@@ -581,8 +579,6 @@ SWIFT_CLASS("_TtC10JawalSwift5Jawal")
 
 @interface Jawal (SWIFT_EXTENSION(JawalSwift)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 @end
 
 @class NSEntityDescription;
