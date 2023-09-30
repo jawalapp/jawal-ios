@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/JawalSwift.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EUhH3EsWjj6IWegQh7fScakFXv8=
+		czzyFY2KsPq9dMlJbU2YXnVfXVc=
 		</data>
 		<key>Modules/JawalSwift.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/JawalSwift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XA50339XVMVnUfik5mg1TmjYw5w=
+		kTKi2cC4JO9MS2Fw0z8ILlf6y3g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dVDYByYiCDUpqwCne38a97ZMA4qiVK7bRfPdW0/Ssmg=
+			UJP036fezb3RtF+NinmNFvpSCdQ7In+uI/ZDNOSXCgE=
 			</data>
 		</dict>
 		<key>Modules/JawalSwift.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yR3mqX3rroHDYF8qKQnvhTLVoCKZ3rjglzAfi9cz0H4=
+			c0jfjeg86KCun1KFSr2pSR6b91VdwyUGaH2QceN2uyI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
