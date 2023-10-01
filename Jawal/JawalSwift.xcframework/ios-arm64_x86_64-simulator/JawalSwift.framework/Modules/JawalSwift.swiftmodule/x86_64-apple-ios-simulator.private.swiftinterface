@@ -29,12 +29,15 @@ public struct InitResultEvent {
 }
 extension JawalSwift.Jawal : CoreLocation.CLLocationManagerDelegate {
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
 }
 @_hasMissingDesignatedInitializers public class JawalConfig {
   public var sdk_key: Swift.String
   public var user_id: Swift.String
   public var description: Swift.String?
   public var enable_background_tracking: Swift.Bool
+  public var distanceFilter: Swift.Double
   @objc deinit
 }
 public struct User : Swift.Decodable {

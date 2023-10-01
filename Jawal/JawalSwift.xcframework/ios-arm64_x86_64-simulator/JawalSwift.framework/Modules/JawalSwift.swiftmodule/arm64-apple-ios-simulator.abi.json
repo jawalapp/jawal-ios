@@ -721,6 +721,72 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManagerDidChangeAuthorization",
+            "printedName": "locationManagerDidChangeAuthorization(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JawalSwift@objc(cs)Jawal(im)locationManagerDidChangeAuthorization:",
+            "mangledName": "$s10JawalSwift0A0C37locationManagerDidChangeAuthorizationyySo010CLLocationD0CF",
+            "moduleName": "JawalSwift",
+            "objc_name": "locationManagerDidChangeAuthorization:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didChangeAuthorization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLAuthorizationStatus",
+                "printedName": "CoreLocation.CLAuthorizationStatus",
+                "usr": "c:@E@CLAuthorizationStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JawalSwift@objc(cs)Jawal(im)locationManager:didChangeAuthorizationStatus:",
+            "mangledName": "$s10JawalSwift0A0C15locationManager_22didChangeAuthorizationySo010CLLocationD0C_So21CLAuthorizationStatusVtF",
+            "moduleName": "JawalSwift",
+            "objc_name": "locationManager:didChangeAuthorizationStatus:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1163,6 +1229,92 @@
                 "declKind": "Accessor",
                 "usr": "s:10JawalSwift0A6ConfigC26enable_background_trackingSbvM",
                 "mangledName": "$s10JawalSwift0A6ConfigC26enable_background_trackingSbvM",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "distanceFilter",
+            "printedName": "distanceFilter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10JawalSwift0A6ConfigC14distanceFilterSdvp",
+            "mangledName": "$s10JawalSwift0A6ConfigC14distanceFilterSdvp",
+            "moduleName": "JawalSwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift0A6ConfigC14distanceFilterSdvg",
+                "mangledName": "$s10JawalSwift0A6ConfigC14distanceFilterSdvg",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift0A6ConfigC14distanceFilterSdvs",
+                "mangledName": "$s10JawalSwift0A6ConfigC14distanceFilterSdvs",
+                "moduleName": "JawalSwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10JawalSwift0A6ConfigC14distanceFilterSdvM",
+                "mangledName": "$s10JawalSwift0A6ConfigC14distanceFilterSdvM",
                 "moduleName": "JawalSwift",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2818,29 +2970,36 @@
     },
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
+      "kind": "BooleanLiteral",
+      "offset": 332,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 421,
+      "offset": 463,
       "length": 9,
       "value": "\"Default\""
     },
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 647,
+      "offset": 689,
       "length": 46,
       "value": "\"Unresolved error \""
     },
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 715,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 692,
+      "offset": 734,
       "length": 2,
       "value": "\"\""
     },
@@ -2854,7 +3013,7 @@
     {
       "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/Jawal.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3637,
       "length": 21,
       "value": "\"JawalSDKInitialized\""
     },
@@ -2878,6 +3037,13 @@
       "offset": 218,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yassineelgarras\/work\/jawal\/sdk\/jawal-ios\/Jawal\/JawalSwift\/JawalConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 2,
+      "value": "50"
     }
   ]
 }
